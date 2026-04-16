@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: #01013f;
+    margin: 0;
+}
+#wrapper {
+    width: 100%;
+}
+
+#slider {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 25px 5px;
+    height: 80vh;
+}
+
+#slider .slide {
+    height: 80vh;
+    margin: 10px;
+    flex: 1;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+#slider .slide h3 {
+    position: absolute;
+    margin: 0;
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    opacity: 0;
+}
+
+#slider .slide.active {
+    flex: 5;
+
+}
+
+#slider .slide.active  h3 {
+    opacity: 1;
+    transition: opacity 0.7s ease-in 0.5s;
+}
+
+#subaru_impreza {
+    background-image: url("./img/subaru_impreza.jpg");
+}
+#volvo {
+    background-image: url("./img/volvo.jpg");
+}
+#mercedes {
+    background-image: url("./img/mercedes.jpg");
+}
+#subaru_forester_sg {
+    background-image: url("./img/subaru_forester_sg.jpg");
+}
+#subaru_forester_sh {
+    background-image: url("./img/subaru_forester_sh.jpg");
+}
+#volkswagen_t3 {
+    background-image: url("./img/volkswagen_t3.jpg");
+}
