@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Service Order</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Заказ-наряд: <span id="orderNumber">2026-04-17-1</span></h1>
+
+    <h2>Запчасти: </h2>
+    <table class="parts-table">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Артикул</th>
+            <th>Производитель</th>
+            <th>Стоимость</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+        </tr>
+        </thead>
+        <tbody id="partsRows">
+        <!-- Здесь будут строки заказ-наряда -->
+        </tbody>
+    </table>
+    <button class="btnSuccess" onclick="addPartRow()">+ Добавить запчасть</button>
+
+    <h2>Работы: </h2>
+    <table class="works-table">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Стоимость</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+        </tr>
+        </thead>
+        <tbody id="workRows">
+        <!-- Здесь будут строки работ -->
+        </tbody>
+    </table>
+    <button class="btnSuccess" onclick="addWorkRow()">+ Добавить работу</button>
+
+
+    <div class="orderFooter">
+        <div class="result">
+            <div class="title">Итого:</div>
+            <div>Запчасти: <span class="sumParts"></span>₽</div>
+            <div>Работы: <span class="sumWorks"></span>₽</div>
+            <div>Сумма заказ-наряда: <span class="totalSum"></span> ₽</div>
+        </div>
+    </div>
+
+    <div>
+        <button class="btnSuccess" id="save-order" onclick="saveOrder()">Сохранить заказ</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

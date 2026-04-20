@@ -1,0 +1,72 @@
+.wrapper {
+    width: 1200px;
+}
+.parts-table,
+.works-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.parts-table, .parts-table td, .parts-table th,
+.works-table, .works-table td, .works-table th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.order-table th {
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.order-table td {
+    text-align: left;
+    padding: 15px;
+}
+
+.error {
+    border: 2px solid red;
+    color: red;
+}
+
+.btnDelete {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSuccess {
+    height: 30px;
+    margin-top: 10px;
+    background-color: #07b707;
+    border: 1px solid #090;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orderFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.orderFooter .result .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.orderFooter .result {
+    border: 1px solid violet;
+    padding: 20px;
+    border-radius: 11px;
+}
+
+.resultPartTitle, .resultWorkTitle, .resultOrderTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
