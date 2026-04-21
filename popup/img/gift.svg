@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="#9C27B0" stroke="#4A148C" stroke-width="2"/>
+
+    <!-- Коробка -->
+    <rect x="28" y="45" width="44" height="32" rx="4" fill="#FF5722"/>
+    <rect x="25" y="40" width="50" height="10" rx="3" fill="#FF8A65"/>
+
+    <!-- Лента -->
+    <rect x="47" y="25" width="6" height="52" rx="2" fill="#FFEB3B"/>
+    <rect x="28" y="47" width="44" height="6" rx="2" fill="#FFEB3B"/>
+
+    <!-- Бант -->
+    <circle cx="50" cy="30" r="8" fill="#FFEB3B"/>
+    <ellipse cx="38" cy="28" rx="12" ry="7" fill="#FDD835" transform="rotate(-25 38 28)"/>
+    <ellipse cx="62" cy="28" rx="12" ry="7" fill="#FDD835" transform="rotate(25 62 28)"/>
+
+    <text x="50" y="88" font-size="10" font-family="Arial" font-weight="bold" fill="white" text-anchor="middle">ПОДАРОК</text>
+</svg>

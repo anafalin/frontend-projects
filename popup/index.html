@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>PopUp</title>
+</head>
+<body>
+<button onclick="inputPromocode()" class="promoBtn">Ввести промокод</button>
+
+<div id="gift" class="gift">
+    <div class="icon"></div>
+    <div class="content">
+        <div class="title"></div>
+        <button class="btn" onclick="closeGift()">Отлично!</button>
+    </div>
+</div>
+
+<div id="promo" class="promo">
+    <div class="promoForm">
+        <input class="input" type="text" name="promocode" id="promocode" placeholder="ПРОМОКОД">
+        <button class="btn" onclick="submitPromocode()">Применить</button>
+    </div>
+    <div id="promoMsg"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

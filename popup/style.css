@@ -1,0 +1,76 @@
+body {
+    background-color: gray;
+}
+
+.gift {
+    display: none;
+    flex-direction: row;
+    width: 400px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 150px;
+    margin-left: -200px;
+    margin-top: -50px;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.gift .icon {
+    width: 150px;
+}
+
+.gift .icon img{
+    width: 100%;
+}
+
+.gift .content .title {
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #60a6ff;
+    border: 1px solid #60a6ff;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.promoForm {
+    margin: 0;
+}
+.promo{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 50px;
+    margin-left: -200px;
+    margin-top: -50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.promoBtn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: gray;
+    color: gray;
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="#2E86DE" stroke="#1B4F72" stroke-width="2"/>
+    <text x="50" y="65" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">-50%</text>
+    <polygon points="50,15 55,35 75,35 60,48 68,68 50,55 32,68 40,48 25,35 45,35" fill="white" opacity="0.8"/>
+</svg>
