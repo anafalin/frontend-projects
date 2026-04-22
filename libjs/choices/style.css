@@ -1,0 +1,44 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Стилизация Choices */
+.choices {
+    width: 200px;
+    background-color: gray;
+    color: white;
+}
+
+/* Стилизация обертки */
+.choices__inner {
+    background-color: gray;
+    color: white;
+}
+
+/* Стилизация выпадающего списка */
+.choices__list {
+    background-color: gray;
+    color: white;
+}
+
+/* Стилизация подсветки при наведении на элемент списка */
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: black;
+}
+
+/* Стилизация стрелки */
+.choices[data-type*=select-one]:after {
+    border-color: white transparent transparent;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    border-color:  transparent transparent white;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.simplebar-offset {
+    padding: 0 0 20px 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.text {
+    width: 600px;
+    height: 500px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/* Стилизация ползунка */
+.simplebar-scrollbar:before {
+    background-color: blue;
+}

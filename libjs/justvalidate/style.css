@@ -1,0 +1,19 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.form {
+    width: 350px;
+}
+
+.form__wrap{
+    margin-bottom: 15px;
+}
+
+.form__inp {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
