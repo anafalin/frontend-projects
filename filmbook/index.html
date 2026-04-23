@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блокнот просмотренных фильмов</title>
+</head>
+<body>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <h2>Блокнот просмотренных фильмов</h2>
+
+    <form id="film-form">
+        <div id="id" style="display: none"></div>
+        <label for="title">Название:</label><br/>
+        <input type="text" id="title" name="title"/>
+        <div class="error" id="titleError" style="display: none"></div>
+        <br/>
+        <label for="genre">Жанр:</label><br/>
+        <input type="text" id="genre" name="genre"/>
+        <div class="error" id="genreError" style="display: none"></div>
+        <br/>
+        <label for="releaseYear">Год:</label><br/>
+        <input type="text" id="releaseYear" name="releaseYear"/>
+        <div class="error" id="releaseYearError" style="display: none"></div>
+        <br/>
+        <label for="isWatched">Успели посмотреть? <input type="checkbox" id="isWatched" name="isWatched"/></label><br/>
+
+        <div id="actionsForm" class="actionsForm">
+            <button type="submit" class="saveBtn" id="saveBtn">Сохранить</button>
+            <button type="submit" class="saveBtn" id="updateBtn" style="display: none">Обновить</button>
+            <button type="submit" class="cancelBtn" id="cancelEditBtn" style="display: none">Отменить редактирование
+            </button>
+        </div>
+    </form>
+
+    <div class="filter">
+        <select class="filter-select" id="filter-film-table">
+            <option value="releaseYear" selected>Год</option>
+            <option value="title">Название</option>
+            <option value="genre">Жанр</option>
+        </select>
+        <button class="sortBtn" id="sortBtn">Сортировать</button>
+    </div>
+    <table id="film-table">
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Жанр</th>
+            <th>Год</th>
+            <th>Успели посмотреть?</th>
+            <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody id="film-tbody">
+        <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
