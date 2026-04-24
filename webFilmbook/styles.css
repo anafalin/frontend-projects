@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px #999;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  vertical-align: center;
+}
+
+.deleteBtn {
+  background-color: #ff5858;
+  border-radius: 5px;
+  border: 1px solid #b20000;
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.deleteAllBtn {
+  background-color: #f11;;
+  border-radius: 5px;
+  border: 1px solid #b20000;
+  cursor: pointer;
+  padding: 8px 25px;
+  height: 40px;
+  color: white;
+}
+
+.saveBtn {
+  width: 100%;
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0px 0px 5px #999;
+  border-radius: 5px;
+  width: 85%;
+  gap: 16px;
+  box-sizing: content-box;
+}
+
+.filter input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  width: 25%;
+  color: black;
+}
+
+.filter select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  width: 25%;
+  color: black;
+  background-color: white;
+}
+
+.error {
+  color: red;
+}
+
+#film-table td:nth-child(1) {
+  width: 30%;  /* Название фильма */
+}
+
+#film-table td:nth-child(2) {
+  width: 20%;  /* Жанр */
+}
+
+#film-table td:nth-child(3) {
+  width: 15%;  /* Год релиза */
+}
+
+#film-table td:nth-child(4) {
+  width: 15%;  /* Просмотрен */
+}
+
+#film-table td:nth-child(5) {
+  width: 20%;  /* Кнопка удаления */
+}

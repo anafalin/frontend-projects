@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильмотека</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<body>
+<form id="film-form">
+    <label for="title">Название:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="genre">Жанр:</label><br>
+    <input type="text" id="genre" name="genre"><br>
+    <label for="releaseYear">Год:</label><br>
+    <input type="text" id="releaseYear" name="releaseYear"><br>
+    <label for="isWatched">Успели посмотреть?<input type="checkbox" id="isWatched" name="isWatched"></label><br>
+    <input type="submit" class="saveBtn" value="Сохранить">
+</form>
+
+<div class="innerWrapper">
+    <div class="filter">
+        <input type="text" id="sortByTitle" placeholder="Название фильма">
+        <input type="text" id="sortByGenre" placeholder="Жанр">
+        <input type="text" id="sortByReleaseYear" placeholder="Год релиза">
+        <select id="sortByIsWatched">
+            <option value="all" selected>Все</option>
+            <option value="true">Просмотренные</option>
+            <option value="false">Не просмотренные</option>
+        </select>
+    </div>
+    <button class="deleteAllBtn" id="deleteAllFilms">Удалить все</button>
+</div>
+
+
+<table id="film-table">
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+    </tr>
+    </thead>
+    <tbody id="film-tbody">
+    <!-- Rows will be inserted here -->
+    </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</body>
+</html>
