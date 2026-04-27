@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.app {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card_img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;   /* вписывает целиком, но могут быть пустые поля */
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card_title {
+    margin: 20px 0 5px 0;
+    font-size: 25px;
+}
+
+.card_price {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__add-btn {
+    width: 100%;
+    background-color: #00b7ff;;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.card__add-btn:hover {
+    background-color: #3e77ff;
+}
+
+.card__add-btn:active {
+    background-color: #043bbd;
+}
+
+.card__add-btn.added {
+    background-color: #10c100;
+}
+
+.card__add-btn.added:hover {
+    background-color: #00991f;
+}
+
+.card__add-btn.added:active {
+    background-color: #027d1b;
+}
+
+.card__add-counter-wrap {
+    display: none;
+}
+
+.card__add-wrap.added .card__add-btn {
+    display: none;
+}
+
+.card__add-wrap.added .card__add-counter-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__add-counter-btn {
+    background-color: #00b7ff;;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.card__add-counter-btn:hover {
+    background-color: #3e77ff;
+}
+
+.card__add-counter-btn:active {
+    background-color: #043bbd;
+}
+
+.card__add-counter-btn:disabled {
+    background-color: gray;
+    cursor: default;
+}
